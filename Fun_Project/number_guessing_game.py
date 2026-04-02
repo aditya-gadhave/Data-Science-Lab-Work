@@ -1,20 +1,28 @@
-import random
+# Number Guessing Game
 
-print("🎮 Welcome to Number Guessing Game!")
-print("I have selected a number between 1 and 100.")
+## Description
+This is a simple number guessing game where the computer randomly selects a number between 1 and 100. The user tries to guess the number with hints provided after each attempt.
 
-number = random.randint(1, 100)
-attempts = 0
+## Dataset
+- Source: Not applicable
+- Description: This project does not use any dataset.
 
-while True:
-    guess = int(input("Enter your guess: "))
-    attempts += 1
+## Steps Performed
+1. Generated a random number using Python
+2. Took user input
+3. Compared guess with actual number
+4. Provided hints (Too high / Too low)
+5. Counted number of attempts
 
-    if guess < number:
-        print("Too low! Try again.")
-    elif guess > number:
-        print("Too high! Try again.")
-    else:
-        print("🎉 Congratulations! You guessed the number.")
-        print("Total attempts:", attempts)
-        break
+## Results
+- User successfully guesses the number
+- Displays total attempts taken
+
+## Tools Used
+- Python
+
+## Conclusion
+This project demonstrates basic Python concepts like loops, conditions, and user input.
+
+## Author
+Aditya Gadhave
